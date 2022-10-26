@@ -1,23 +1,47 @@
-import logo from './logo.svg';
+
 import './App.css';
+import  Header  from './Components/Header/Header';
+import Navbar from './Components/Navbar/Navbar';
+import Itemslist from './Components/Itemslist/Itemslist';
+import StaticsPage from './Pages/StatisticsPage/StatisticsPage';
+import UsersPage from './Pages/UsersPage/UsersPage';
+import ProductList from './Pages/Productlist/ProductList';
+import ProductPage from './Pages/ProductPage/ProductPage';
+
+import {
+  Routes,
+  Switch,
+  Route,
+} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+    
+      <Navbar/>
+
+      <div className='wrapper'>
+     
+      <Header/>
+        <Routes>
+
+          <Route path='/users' element={ <UsersPage />}/>
+          
+     
+
+          <Route path='statistic' element={ <StaticsPage/>}/>
+          <Route path='products' element={ <ProductList/>}/>
+
+          <Route path={`productPage/:id`} element={<ProductPage/>}/>
+        
+        </Routes>
+     
+
+      </div>
+      
+
+      
     </div>
   );
 }

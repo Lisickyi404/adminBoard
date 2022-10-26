@@ -1,0 +1,31 @@
+.title{
+ padding-top: 18px;
+ padding-bottom: 18px;
+ width: fit-content;
+}
+
+.autour_info{
+    display: flex;
+}
+
+.section{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.ProductPage{
+    width: 100%;
+   
+    .ProductInfo{
+
+
+        .categories{
+            display: flex;
+            margin-top: 11px;
+        
+            .category{
+                width: 170px;
+          
+            }
+        }
+    }
+}

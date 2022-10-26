@@ -1,0 +1,33 @@
+.ChatModalWindow{
+    width:30%;
+    height: 40%;
+    border:1px solid black;
+    background: white;
+    position: fixed;
+    top:10%;
+
+    .chatHeader{
+        display: flex;
+
+        .adress{
+            margin-left: 4px;
+            
+            cursor: pointer;
+            padding: 2px 2px 2px 2px;
+            display: flex;
+            width: fit-content;
+            height: 16px;
+            background: paleturquoise;
+            border: 999;
+        }
+    }
+    
+    .sendMessage{
+
+        .textarea{
+            width: 100%;
+            height: 70px;
+        }
+    }
+
+}
